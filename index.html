@@ -104,24 +104,40 @@
 
   <img src="photo3.jpg">
 
-  <pre style="
-  font-size: 20px;
-  line-height: 1.05;
-  text-align: center;
-  font-family: monospace;
-  color: #e91e63;
-  margin-top: 30px;
-">
-      ❤️❤️❤️❤️❤️❤️❤️
-   ❤️❤️❤️❤️❤️❤️❤️❤️❤️
- ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
- ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
-  ❤️❤️❤️❤️❤️❤️❤️❤️❤️
-    ❤️❤️❤️❤️❤️❤️❤️
-      ❤️❤️❤️❤️❤️
-        ❤️❤️❤️
-          ❤️
-</pre>
+  <div style="display:flex; justify-content:center; margin-top:40px;">
+  <div class="heart-shape"></div>
+</div>
+
+<style>
+.heart-shape {
+  width: 120px;
+  height: 110px;
+  position: relative;
+  background: #e91e63;
+  transform: rotate(-45deg);
+}
+
+.heart-shape:before,
+.heart-shape:after {
+  content: "";
+  width: 120px;
+  height: 110px;
+  position: absolute;
+  background: #e91e63;
+  border-radius: 50%;
+}
+
+.heart-shape:before {
+  top: -60px;
+  left: 0;
+}
+
+.heart-shape:after {
+  left: 60px;
+  top: 0;
+}
+</style>
+
   <p>
     all my love in the whole wide world, 
   </p>
